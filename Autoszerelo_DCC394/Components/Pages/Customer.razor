@@ -10,6 +10,7 @@
             <th>Name</th>
             <th>Email</th>
             <th>Phone</th>
+            <th>Location</th>
             <th>Actions</th>
         </tr>
     </thead>
@@ -21,6 +22,7 @@
                 <td>@customer.Name</td>
                 <td>@customer.Email</td>
                 <td>@customer.Phone</td>
+                <td>@customer.Location</td>
                 <td>
                     <button class="btn btn-danger" @onclick="() => DeleteCustomer(customer.Id)">Delete</button>
                 </td>
@@ -30,7 +32,7 @@
 </table>
 
 <h4>Add New Customer</h4>
-<EditForm Model="NewCustomer" OnSubmit="HandleSubmit">
+<EditForm Model="NewCustomer" OnValidSubmit="AddCustomer" FormName="AddCustomerForm">
     <div class="form-group">
         <label>Name</label>
         <InputText class="form-control" @bind-Value="NewCustomer.Name" />
@@ -42,6 +44,10 @@
     <div class="form-group">
         <label>Phone</label>
         <InputText class="form-control" @bind-Value="NewCustomer.Phone" />
+    </div>
+        <div class="form-group">
+        <label>Location</label>
+        <InputText class="form-control" @bind-Value="NewCustomer.Location" />
     </div>
     <button type="submit" class="btn btn-primary">Add Customer</button>
 </EditForm>
@@ -55,32 +61,23 @@
         Customers = CustomerService.GetAllCustomers();
     }
 
-     private async Task HandleSubmit(EditContext context)
-    {
-        Console.WriteLine("Submitting customer...");
-        CustomerService.CreateCustomer(NewCustomer);
-        Customers = CustomerService.GetAllCustomers();
-        NewCustomer = new CustomerModel
-        {
-            Name = string.Empty,
-            Email = string.Empty,
-            Phone = string.Empty
-        };
-        StateHasChanged();
-    }
-
     private void AddCustomer()
     {
-        CustomerService.CreateCustomer(NewCustomer);
-        Customers = CustomerService.GetAllCustomers(); // Frissítsd a listát
+        CustomerService.CreateCustomer(NewCustomer); // Új ügyfél hozzáadása
+        Customers = CustomerService.GetAllCustomers(); // Lista frissítése
+
+        // Új objektum inicializálása, hogy az űrlap ürüljön
         NewCustomer = new CustomerModel
         {
             Name = string.Empty,
             Email = string.Empty,
-            Phone = string.Empty
+            Phone = string.Empty,
+            Location = string.Empty
         };
-        StateHasChanged(); // Frissíti az oldalt
+
+        StateHasChanged(); // Felület frissítése
     }
+
 
     private void DeleteCustomer(int id)
     {

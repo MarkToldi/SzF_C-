@@ -8,6 +8,9 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddSingleton<CustomerService>();
 
+builder.Services.AddScoped<WorkService>();
+
+
 
 var app = builder.Build();
 

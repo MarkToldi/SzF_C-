@@ -23,6 +23,7 @@ public class CustomerService
         existingCustomer.Name = updatedCustomer.Name;
         existingCustomer.Email = updatedCustomer.Email;
         existingCustomer.Phone = updatedCustomer.Phone;
+        existingCustomer.Location = updatedCustomer.Location;
 
         return true;
     }
@@ -35,4 +36,7 @@ public class CustomerService
         _customers.Remove(customer);
         return true;
     }
+
+
+
 }
