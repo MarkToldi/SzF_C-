@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\36309\\Desktop\\UNI\\SzF_C#\\Autoszerelo_DCC394\\Autoszerelo_DCC394.csproj": {}
+    "c:\\Users\\36309\\Desktop\\UNI\\SzF_C#\\Autoszerelo_DCC394\\Autoszerelo_DCC394.csproj": {}
   },
   "projects": {
-    "C:\\Users\\36309\\Desktop\\UNI\\SzF_C#\\Autoszerelo_DCC394\\Autoszerelo_DCC394.csproj": {
+    "c:\\Users\\36309\\Desktop\\UNI\\SzF_C#\\Autoszerelo_DCC394\\Autoszerelo_DCC394.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\36309\\Desktop\\UNI\\SzF_C#\\Autoszerelo_DCC394\\Autoszerelo_DCC394.csproj",
+        "projectUniqueName": "c:\\Users\\36309\\Desktop\\UNI\\SzF_C#\\Autoszerelo_DCC394\\Autoszerelo_DCC394.csproj",
         "projectName": "Autoszerelo_DCC394",
-        "projectPath": "C:\\Users\\36309\\Desktop\\UNI\\SzF_C#\\Autoszerelo_DCC394\\Autoszerelo_DCC394.csproj",
+        "projectPath": "c:\\Users\\36309\\Desktop\\UNI\\SzF_C#\\Autoszerelo_DCC394\\Autoszerelo_DCC394.csproj",
         "packagesPath": "C:\\Users\\36309\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\36309\\Desktop\\UNI\\SzF_C#\\Autoszerelo_DCC394\\obj\\",
+        "outputPath": "c:\\Users\\36309\\Desktop\\UNI\\SzF_C#\\Autoszerelo_DCC394\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\36309\\AppData\\Roaming\\NuGet\\NuGet.Config"

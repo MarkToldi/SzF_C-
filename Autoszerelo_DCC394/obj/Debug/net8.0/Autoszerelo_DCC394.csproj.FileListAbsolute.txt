@@ -27,3 +27,4 @@ c:\Users\36309\Desktop\UNI\SzF_C#\Autoszerelo_DCC394\obj\Debug\net8.0\refint\Aut
 c:\Users\36309\Desktop\UNI\SzF_C#\Autoszerelo_DCC394\obj\Debug\net8.0\Autoszerelo_DCC394.pdb
 c:\Users\36309\Desktop\UNI\SzF_C#\Autoszerelo_DCC394\obj\Debug\net8.0\Autoszerelo_DCC394.genruntimeconfig.cache
 c:\Users\36309\Desktop\UNI\SzF_C#\Autoszerelo_DCC394\obj\Debug\net8.0\ref\Autoszerelo_DCC394.dll
+c:\Users\36309\Desktop\UNI\SzF_C#\Autoszerelo_DCC394\obj\Debug\net8.0\Autoszerelo_DCC394.sourcelink.json

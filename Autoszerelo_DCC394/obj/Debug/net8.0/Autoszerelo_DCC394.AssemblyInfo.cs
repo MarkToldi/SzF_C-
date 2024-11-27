@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Autoszerelo_DCC394")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36971718184bb48be4e3397e26f01bf0571a1ef9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Autoszerelo_DCC394")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Autoszerelo_DCC394")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

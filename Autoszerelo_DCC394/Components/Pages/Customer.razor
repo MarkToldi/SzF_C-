@@ -1,0 +1,90 @@
+@page "/customer"
+@inject CustomerService CustomerService
+
+<h3>Customer Management</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Customers)
+        {
+            <tr>
+                <td>@customer.Id</td>
+                <td>@customer.Name</td>
+                <td>@customer.Email</td>
+                <td>@customer.Phone</td>
+                <td>
+                    <button class="btn btn-danger" @onclick="() => DeleteCustomer(customer.Id)">Delete</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h4>Add New Customer</h4>
+<EditForm Model="NewCustomer" OnSubmit="HandleSubmit">
+    <div class="form-group">
+        <label>Name</label>
+        <InputText class="form-control" @bind-Value="NewCustomer.Name" />
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <InputText class="form-control" @bind-Value="NewCustomer.Email" />
+    </div>
+    <div class="form-group">
+        <label>Phone</label>
+        <InputText class="form-control" @bind-Value="NewCustomer.Phone" />
+    </div>
+    <button type="submit" class="btn btn-primary">Add Customer</button>
+</EditForm>
+
+@code {
+    private List<CustomerModel> Customers = new();
+    private CustomerModel NewCustomer = new();
+
+    protected override void OnInitialized()
+    {
+        Customers = CustomerService.GetAllCustomers();
+    }
+
+     private async Task HandleSubmit(EditContext context)
+    {
+        Console.WriteLine("Submitting customer...");
+        CustomerService.CreateCustomer(NewCustomer);
+        Customers = CustomerService.GetAllCustomers();
+        NewCustomer = new CustomerModel
+        {
+            Name = string.Empty,
+            Email = string.Empty,
+            Phone = string.Empty
+        };
+        StateHasChanged();
+    }
+
+    private void AddCustomer()
+    {
+        CustomerService.CreateCustomer(NewCustomer);
+        Customers = CustomerService.GetAllCustomers(); // Frissítsd a listát
+        NewCustomer = new CustomerModel
+        {
+            Name = string.Empty,
+            Email = string.Empty,
+            Phone = string.Empty
+        };
+        StateHasChanged(); // Frissíti az oldalt
+    }
+
+    private void DeleteCustomer(int id)
+    {
+        CustomerService.DeleteCustomer(id);
+        Customers = CustomerService.GetAllCustomers();
+    }
+}
