@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "c:\\Users\\36309\\Desktop\\UNI\\SzF_C#\\Autoszerelo_DCC394\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Autoszerelo_DCC394.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Autoszerelo_DCC394.bundle.scp.css"
+    },
+    {
+      "Id": "c:\\Users\\36309\\Desktop\\UNI\\SzF_C#\\Autoszerelo_DCC394\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "c:\\Users\\36309\\Desktop\\UNI\\SzF_C#\\Autoszerelo_DCC394\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "c:\\Users\\36309\\Desktop\\UNI\\SzF_C#\\Autoszerelo_DCC394\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "c:\\Users\\36309\\Desktop\\UNI\\SzF_C#\\Autoszerelo_DCC394\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Autoszerelo_DCC394.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Autoszerelo_DCC394.props",
+      "PackagePath": "build\\Autoszerelo_DCC394.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Autoszerelo_DCC394.props",
+      "PackagePath": "buildMultiTargeting\\Autoszerelo_DCC394.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Autoszerelo_DCC394.props",
+      "PackagePath": "buildTransitive\\Autoszerelo_DCC394.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
